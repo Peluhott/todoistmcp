@@ -1,0 +1,21 @@
+[project]
+name = "todoistmcp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "peluhott", email = "j_sedanomar@uncg.edu" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "mcp[cli]>=2.3.0",
+    "python-dotenv>=1.2.4",
+    "todoist-api-python>=3.1.0,<4",
+]
+
+[project.scripts]
+todoistmcp = "todoistmcp:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
